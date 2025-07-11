@@ -72,20 +72,25 @@
       100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255, 255, 255, 0); }
     }
     .running-text {
-      background: #dcedc8; /* aksen hijau muda */
+      width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+      box-sizing: border-box;
       color: #1b5e20;
+      background: #dcedc8;
       padding: 6px 10px;
-      margin-bottom: 20px;
       font-weight: 600;
       font-size: 13px;
       font-family: 'Orbitron', sans-serif;
       border-radius: 8px;
+    }
+    .running-text span {
+      display: inline-block;
+      padding-left: 100%;
       animation: marquee 6s linear infinite;
-      white-space: nowrap;
-      overflow: hidden;
     }
     @keyframes marquee {
-      0%   { transform: translateX(100%); }
+      0%   { transform: translateX(0); }
       100% { transform: translateX(-100%); }
     }
     .slogan {
@@ -109,9 +114,7 @@
   <div class="text-center">
     <img src="PATELKI.jpeg" alt="Logo PATELKI" class="logo">
     <h1>PATELKI JEMBER</h1>
-    <div class="running-text">
-      Selamat Datang di Pelayanan Online DPC PATELKI Kabupaten Jember
-    </div>
+    <div class="running-text"><span>Pelayanan Online DPC Patelki Kabupaten Jember</span></div>
 
     <div class="grid-buttons">
       <a href="https://docs.google.com/forms/d/e/1FAIpQLScPdY1Zld7nCHBJnWnZDGAdKz2CxiS8RKVIKNkR429-8p_yjw/viewform?usp=share_link" class="btn btn-custom">💳 Konfirmasi Iuran</a>
