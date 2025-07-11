@@ -23,18 +23,14 @@
       padding: 40px 20px;
       position: relative;
     }
-    .logo-wrapper {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: 20px;
-    }
     .logo {
       width: 120px;
       height: 120px;
       object-fit: cover;
       border-radius: 50%;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      display: block;
+      margin: 0 auto 10px;
     }
     .logo-dpw {
       position: absolute;
@@ -100,7 +96,7 @@
     }
     .grid-buttons {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      grid-template-columns: repeat(3, 1fr);
       gap: 16px;
       max-width: 900px;
       margin: 0 auto;
@@ -110,9 +106,7 @@
 <body>
   <img src="Dpwjatim.jpeg" alt="Logo DPW Jatim" class="logo-dpw">
   <div class="text-center">
-    <div class="logo-wrapper">
-      <img src="PATELKI.jpeg" alt="Logo PATELKI" class="logo">
-    </div>
+    <img src="PATELKI.jpeg" alt="Logo PATELKI" class="logo">
     <h1>PATELKI JEMBER</h1>
     <div class="running-text">
       Selamat Datang di Pelayanan Online DPC PATELKI Kabupaten Jember
